@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <section id="Home">
+      <nav>
+        <div class="logo">
+          <a href="#Home"><img src="image/logo.png" alt="Logo" /></a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#Home">home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Gallary">Gallery</a></li>
+          <li><a href="#Review">Review</a></li>
+          <li><a href="#Order">Order</a></li>
+        </ul>
+        <!--  -->
+        <div class="icon">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <i class="fa-solid fa-heart"></i>
+          <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        <div class="menu-button" onclick="toggleSidebar()">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="sidebar">
+        <ul class="nav-links" onclick="toggleSidebar()">
+          <li></li>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Menu">Menu</a></li>
+          <li><a href="#Gallary">Gallery</a></li>
+          <li><a href="#Review">Review</a></li>
+          <li><a href="#Order">Order</a></li>
+        </ul>
+      </div>
+
+      <div class="main">
+        <div class="men_text">
+          <h1>Get Fresh<span>Food</span><br />in a Easy Way</h1>
+        </div>
+        <div class="main_image">
+          <img src="image/main_img.png" />
+        </div>
+      </div>
+      <p>
+        Craving fresh, delicious food that’s easy to order and quick to arrive?
+        Look no further! At our restaurant, we believe good food should be
+        accessible to everyone, anytime. That’s why we focus on using the
+        freshest ingredients to craft meals that nourish your soul.<span
+          class="secondpara"
+        >
+          Whether you're planning a family dinner, a quick solo meal, or a grand
+          feast with friends, our seamless ordering system ensures you get your
+          favorite dishes with ease. Sit back, relax, and let us bring the joy
+          of fresh food right to your table!
+        </span>
+      </p>
+
+      <div class="main_btn">
+        <a href="#">Order Now</a>
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </section>
+
+    <div class="about" id="About">
+      <div class="about_main">
+        <div class="image">
+          <img src="image/Food-Plate.png" alt="Food Plate" />
+        </div>
+
+        <div class="about_text">
+          <h1><span>About</span>Us</h1>
+          <h3>Why Choose us?</h3>
+          <p class="firstpara">
+            At <strong><em>Fusion Kitchen</em></strong> , we offer fresh,
+            high-quality meals made from the finest ingredients. Our diverse
+            menu caters to all tastes, from quick bites to full meals. With easy
+            online ordering and fast, reliable delivery, enjoying great food is
+            simple and convenient. We pride ourselves on affordability without
+            compromising on taste or quality.
+          </p>
+          <br />
+          <p class="secondpara">
+            Plus, your satisfaction is our top priority, ensuring every meal is
+            prepared with care and delivered fresh. We’re committed to providing
+            a dining experience that exceeds your expectations every time.
+            Choose us for the perfect mix of taste, convenience, and quality.
+            Whether you’re dining in or enjoying from home, we guarantee every
+            bite will be worth it. Join us today and experience the fusion of
+            flavor in every dish!
+          </p>
+        </div>
+      </div>
+      <a href="#" class="about_btn">Order Now</a>
+    </div>
+
+    <div class="menu" id="Menu">
+      <h1>Our<span>Menu</span></h1>
+      <div class="menu_box">
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/buger.jpg" />
+          </div>
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+          <div class="menu_info">
+            <h2>Burger</h2>
+            <p>
+              Juicy, grilled to perfection, and topped with the freshest
+              ingredients—our burger is the ultimate comfort food!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+<!-- More 11 cards  -->
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/pasta.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Pasta</h2>
+            <p>
+              Rich, creamy, and packed with flavor—our pasta is a delightful
+              comfort food, crafted to perfection with finest ingredients!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/lasagna.webp" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Lasagna</h2>
+            <p>
+              Layers of cheesy goodness with a savory sauce—our lasagna is a
+              comforting, indulgent meal you’ll keep coming back for!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/chocolate_Drink.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Drink</h2>
+            <p>
+              Chilled, refreshing, and full of flavor—our drink is the perfect
+              companion to any meal, providing a burst of satisfaction in every
+              sip!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/pizza.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Pizza</h2>
+            <p>
+              Thin, crispy crust topped with the finest cheeses and fresh
+              ingredients—our pizza is the ultimate treat for your taste buds!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/Hot_dog.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Hot Dog</h2>
+            <p>
+              Grilled to perfection, topped with fresh ingredients—our hotdog is
+              a delicious, savory snack!
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/juse.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Juice</h2>
+            <p>
+              Freshly squeezed and packed with natural flavors—our juice is the
+              refreshing boost you need to brighten your day
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/biryani.webp" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Biryani</h2>
+            <p>
+              Aromatic, flavorful, and cooked to perfection—our biryani combines
+              rich spices and tender rice for an unforgettable experience.
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/chocolate.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Chocolate</h2>
+            <p>
+              Silky smooth, rich, and indulgent—our chocolate is the ultimate
+              treat for any sweet lover craving something decadent.
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/ice_cream.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Ice Cream</h2>
+            <p>
+              Cold, creamy, and bursting with flavor—our ice cream is the
+              perfect way to cool off and satisfy your sweet tooth
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/Spanchi.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Muffin</h2>
+            <p>
+              Soft, fluffy, and filled with delicious flavors—our muffin is the
+              perfect snack to brighten up your day.
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+
+        <div class="menu_card">
+          <div class="menu_image">
+            <img src="image/sandwich.jpg" />
+          </div>
+
+          <div class="small_card">
+            <i class="fa-solid fa-heart"></i>
+          </div>
+
+          <div class="menu_info">
+            <h2>Sandwich</h2>
+            <p>
+              Freshly stacked with quality ingredients and the perfect
+              fillings—our sandwich is a satisfying meal you’ll love with every
+              bite.
+            </p>
+            <h3><i class="fa fa-inr"></i>20.00</h3>
+            <div class="menu_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <a href="#" class="menu_btn">Order Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallary" id="Gallary">
+      <h1>Our<span>Gallery</span></h1>
+
+      <div class="gallary_image_box">
+        <div class="gallary_image">
+          <img src="image/gallary_1.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+
+        <div class="gallary_image">
+          <img src="image/gallary_2.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+
+        <div class="gallary_image">
+          <img src="image/gallary_3.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+
+        <div class="gallary_image">
+          <img src="image/gallary_4.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+
+        <div class="gallary_image">
+          <img src="image/gallary_5.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+
+        <div class="gallary_image">
+          <img src="image/gallary_6.jpg" />
+
+          <h3>Food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi
+            sint eveniet laboriosam
+          </p>
+          <a href="#" class="gallary_btn">Order Now</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="review" id="Review">
+      <h1>Customer <span>Review</span></h1>
+      <div class="review_box">
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_1.png" />
+          </div>
+          <div class="review_text">
+            <h2 class="name">Kiara Corner</h2>
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Fusion Kitchen is hands down one of the best dining experiences
+              I’ve ever had! The food was fresh, flavorful, and beautifully
+              presented. Every bite was a delightful experience, and you could
+              tell the ingredients were of the highest quality. I ordered their
+              pasta and lasagna, and both were cooked to perfection. The
+              delivery was incredibly fast, and the food was still hot when it
+              arrived. Plus, the packaging was eco-friendly and neat. I also
+              appreciated their attention to customer service, as they promptly
+              addressed a small query I had. This place is a gem, and I will
+              definitely be ordering again soon!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_2.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Tommy Oliver</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              I can’t say enough good things about Fusion Kitchen! From the
+              moment I placed my order, everything was seamless. Their website
+              is user-friendly, and the menu offers so many diverse options. I
+              tried the veg burger and pizza, and both exceeded my expectations.
+              The burger was juicy and packed with flavor, while the pizza had
+              the perfect thin, crispy crust with fresh toppings. The portion
+              sizes were generous, making it worth every penny. The delivery was
+              quick, and the food arrived perfectly warm. This restaurant has
+              set a new standard for quality and service. Highly recommend!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_3.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">Jessie Potter</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              My experience with Fusion Kitchen was absolutely amazing! The food
+              was prepared with so much care, and it was evident in every bite.
+              I ordered their hotdog, fries, and a drink combo, and it was the
+              perfect meal for a cozy evening at home. The hotdog was loaded
+              with fresh toppings and had just the right amount of seasoning.
+              The drink was refreshing, and the fries were crispy and
+              well-seasoned. What stood out to me the most was the delivery
+              service—it was fast and hassle-free. I’ve already told my friends
+              about this place. They truly know how to impress their customers!
+            </p>
+          </div>
+        </div>
+
+        <div class="review_card">
+          <div class="review_profile">
+            <img src="image/review_4.png" />
+          </div>
+
+          <div class="review_text">
+            <h2 class="name">John Deo</h2>
+
+            <div class="review_icon">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+
+            <div class="review_social">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-linkedin-in"></i>
+            </div>
+
+            <p>
+              Fusion Kitchen deserves all the praise! I ordered their biryani
+              and a few sides, and it was one of the best meals I’ve had in a
+              long time. The biryani was aromatic, flavorful, and cooked to
+              perfection. The spices were well-balanced, and the portion size
+              was perfect for sharing. The sides, including their fresh salads
+              and dips, complemented the main course so well. The delivery was
+              fast, and the food was packed with care to ensure it arrived in
+              perfect condition. This restaurant has become my go-to for
+              high-quality, delicious meals. I’m excited to try more from their
+              menu!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="order" id="Order">
+      <h1><span>Order</span> Now</h1>
+      <div class="order_main">
+        <div class="order_image">
+          <img src="image/order_image.png" />
+        </div>
+
+        <form action="#">
+          <div class="input">
+            <p>Name</p>
+            <input type="text" placeholder="Your Name" />
+          </div>
+          <div class="input">
+            <p>Email</p>
+            <input type="email" placeholder="Your Email" />
+          </div>
+          <div class="input">
+            <p>Number</p>
+            <input type="text" placeholder="Contact Number" />
+          </div>
+          <div class="input">
+            <p>How Many Order</p>
+            <input type="number" placeholder="No. of Orders" />
+          </div>
+          <div class="input">
+            <p>You Order</p>
+            <input type="text" placeholder="Food Names" />
+          </div>
+          <div class="input">
+            <p>Address</p>
+            <input type="text" placeholder="Delivery Address" />
+          </div>
+          <a href="#" class="order_btn">Order Now</a>
+        </form>
+      </div>
+    </div>
+
+    <div class="team">
+      <h1>Our<span>Team</span></h1>
+
+      <div class="team_box">
+        <div class="profile">
+          <img src="image/chef1.png" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef2.png" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef3.jpg" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <img src="image/chef4.jpg" />
+
+          <div class="info">
+            <h2 class="name">Chef</h2>
+            <p class="bio">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+
+            <div class="team_icon">
+              <i class="fa-brands fa-facebook-f"></i>
+              <i class="fa-brands fa-twitter"></i>
+              <i class="fa-brands fa-instagram"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col">
+            <h4>company</h4>
+            <ul>
+              <li><a href="#">about us</a></li>
+              <li><a href="#">our services</a></li>
+              <li><a href="#">privacy policy</a></li>
+              <li><a href="#">affiliate program</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>get help</h4>
+            <ul>
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">shipping</a></li>
+              <li><a href="#">returns</a></li>
+              <li><a href="#">order status</a></li>
+              <li><a href="#">payment options</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>online shop</h4>
+            <ul>
+              <li><a href="#">Burger</a></li>
+              <li><a href="#">Pasta</a></li>
+              <li><a href="#">Biryani</a></li>
+              <li><a href="#">Drink</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h4>follow us</h4>
+            <div class="social-links">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      function toggleSidebar() {
+        const sidebar = document.querySelector(".sidebar");
+        sidebar.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
